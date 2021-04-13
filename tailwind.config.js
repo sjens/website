@@ -3,12 +3,12 @@ module.exports = {
     './public/index.html',
     './src/**/*.{js,vue}',
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
         'serif': ['Roboto Slab Light', 'serif']
-      }
+      },
     },
   },
   variants: {
