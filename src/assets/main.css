@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'Roboto Slab Light';
+  src: url('/font/RobotoSlab-Light.ttf');
+}
+
 @tailwind utilities;
