@@ -1,9 +1,9 @@
 <template>
-  <div class="mx-auto max-w-2xl">
-    <div class="flex justify-center my-6">
-      <h1>About Me</h1>
-    </div>
-    <div class="content">
+  <main-layout>
+    <div class="mx-auto max-w-2xl">
+      <div class="flex justify-center my-6">
+        <h1>About Me</h1>
+      </div>
       <p class="my-2">
         Hello and welcome to my website, my name is Simon. I am a Software
         Engineer who lives in Copenhagen. I have a masters degree in Computer
@@ -33,14 +33,14 @@
         </p>
       </div>
     </div>
-  </div>
+  </main-layout>
 </template>
 
 <script>
+import MainLayout from "../layouts/Main.vue";
 export default {
-  name: "About",
-  props: {
-    msg: String,
+  components: {
+    MainLayout,
   },
 };
 </script>
