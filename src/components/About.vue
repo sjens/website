@@ -21,7 +21,7 @@
         includes: Python, C#, TypeScript, Android development, and a tiny bit of
         C++.
       </p>
-      <p class="">
+      <p class="my-2">
         Throughout I have had a focus on Agile development in Scrum teams and
         automatic testing of software.
       </p>
