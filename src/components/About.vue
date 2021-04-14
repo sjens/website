@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="mx-auto max-w-2xl">
     <div class="flex justify-center my-6">
-      <h1 class="text-4xl">About Me</h1>
+      <h1>About Me</h1>
     </div>
     <div class="content">
       <p class="my-2">
@@ -21,7 +21,7 @@
         includes: Python, C#, TypeScript, Android development, and a tiny bit of
         C++.
       </p>
-      <p class="my-2">
+      <p class="">
         Throughout I have had a focus on Agile development in Scrum teams and
         automatic testing of software.
       </p>

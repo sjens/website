@@ -10,6 +10,13 @@ module.exports = {
         'serif': ['Roboto Slab Light', 'serif']
       },
     },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'background-light': '#fae7df',
+      'background-dark': '#423042',
+      'selection-light': '#ccffee',
+      'selection-dark': '#314331',
+    }),
   },
   variants: {
     extend: {},

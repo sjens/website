@@ -1,9 +1,15 @@
 <template>
-  <div
-    id="app"
-    class="font-serif subpixel-antialiased container mx-auto max-w-2xl"
-  >
-    <AboutPage />
+  <div id="app">
+    <transition
+      appear
+      appear-active-class="transition-opacity duration-500 ease-in"
+      appear-class="opacity-0"
+      appear-to-class="opacity-100"
+    >
+      <div class="p-6">
+        <AboutPage />
+      </div>
+    </transition>
   </div>
 </template>
 

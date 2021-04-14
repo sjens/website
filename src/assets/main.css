@@ -1,9 +1,27 @@
 @tailwind base;
-@tailwind components;
 
 @font-face {
   font-family: 'Roboto Slab Light';
   src: url('/font/RobotoSlab-Light.ttf');
 }
 
+@layer base {
+  body {
+    @apply font-serif subpixel-antialiased min-h-screen bg-background-light dark:bg-background-dark text-gray-700 dark:text-gray-200
+  }
+  ::selection {
+    @apply bg-selection-light dark:bg-selection-dark
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
+
+@tailwind components;
 @tailwind utilities;
