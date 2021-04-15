@@ -1,9 +1,9 @@
 <template>
-  <ul class="mt-20 px-4 border-r-2 border-solid border-gray-300">
-    <li><nav-link href="/">About</nav-link></li>
-    <li><nav-link href="/words">Words</nav-link></li>
-    <li><nav-link href="/projects">Projects</nav-link></li>
-  </ul>
+  <div class="hidden md:flex">
+    <nav-link href="/">Home</nav-link>
+    <nav-link href="/about">About</nav-link>
+    <nav-link href="/words">Words</nav-link>
+  </div>
 </template>
 
 <script>

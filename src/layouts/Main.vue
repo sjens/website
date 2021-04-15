@@ -5,9 +5,9 @@
     appear-class="opacity-0"
     appear-to-class="opacity-100"
   >
-    <div class="flex mx-auto max-w-3xl p-6">
+    <div>
       <navigator />
-      <div class="mx-auto px-4">
+      <div class="mx-auto max-w-2xl p-6">
         <slot />
       </div>
     </div>
