@@ -2,8 +2,8 @@
   <div class="md:hidden">
     <div class="pt-6 pr-6 pb-1 flex justify-end">
       <button class="w-8 h-8" v-on:click="toggleNavigation">
-        <img src="../assets/menu.svg" v-if="!showNav" />
-        <img src="../assets/close.svg" v-if="showNav" />
+        <menu-icon v-if="!showNav" />
+        <close-icon v-if="showNav" />
         </button>
     </div>
     <transition
@@ -30,11 +30,13 @@
 
 <script>
 import NavLink from "./NavLink.vue";
+import MenuIcon from "../icons/Menu.vue";
+import CloseIcon from "../icons/Close.vue";
 export default {
   props: {
     showNav: Boolean,
   },
-  components: { NavLink },
+  components: { NavLink, MenuIcon, CloseIcon },
   methods: {
     toggleNavigation() {
       this.showNav = !this.showNav;
