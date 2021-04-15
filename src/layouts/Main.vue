@@ -7,6 +7,7 @@
   >
     <div>
       <navigator />
+      <mobile-navigator />
       <div class="mx-auto max-w-2xl p-6">
         <slot />
       </div>
@@ -16,7 +17,8 @@
 
 <script>
 import Navigator from "../components/Navigator.vue";
+import MobileNavigator from "../components/MobileNavigator.vue";
 export default {
-  components: { Navigator },
+  components: { Navigator, MobileNavigator },
 };
 </script>
