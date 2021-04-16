@@ -20,7 +20,7 @@
             <close-icon />
           </button>
         </div>
-        <h1 class="flex flex-col">
+        <h1 class="flex flex-col p-">
           <nav-link href="/" class="my-4">Home</nav-link>
           <nav-link href="/about" class="my-4">About</nav-link>
           <nav-link href="/words" class="my-4">Words</nav-link>
@@ -35,8 +35,10 @@ import NavLink from "./NavLink.vue";
 import MenuIcon from "../icons/Menu.vue";
 import CloseIcon from "../icons/Close.vue";
 export default {
-  props: {
-    showNav: Boolean,
+  data: function () {
+    return {
+      showNav: this.showNav,
+    };
   },
   components: { NavLink, MenuIcon, CloseIcon },
   methods: {
