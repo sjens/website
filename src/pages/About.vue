@@ -1,5 +1,8 @@
-<template>
+<template >
   <main-layout>
+    <template #pageTitle>
+      <h2>About</h2>
+    </template>
     <p class="my-2">
       Hello and welcome to my website, my name is Simon. I am a Software
       Engineer who lives in Copenhagen. I have a masters degree in Computer

@@ -1,9 +1,5 @@
 <template>
-  <a class="mx-2"
-    v-bind:href="href"
-    v-bind:class="{ 'underline': isActive }"
-    v-on:click="go"
-  >
+  <a v-bind:href="href" v-bind:class="{ underline: isActive }" v-on:click="go">
     <slot></slot>
   </a>
 </template>
