@@ -1,5 +1,5 @@
 <template>
-  <div class="md:hidden">
+  <div class="md:hidden flex">
     <button class="w-8 h-8" v-on:click="toggleNavigation">
       <menu-icon />
     </button>
@@ -35,9 +35,9 @@ import NavLink from "./NavLink.vue";
 import MenuIcon from "../icons/Menu.vue";
 import CloseIcon from "../icons/Close.vue";
 export default {
-  data: function () {
+  data: function() {
     return {
-      showNav: this.showNav,
+      showNav: this.showNav
     };
   },
   components: { NavLink, MenuIcon, CloseIcon },
