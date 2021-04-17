@@ -21,9 +21,9 @@
           </button>
         </div>
         <h1 class="flex flex-col p-">
-          <nav-link href="/" class="my-4">Home</nav-link>
-          <nav-link href="/about" class="my-4">About</nav-link>
-          <nav-link href="/words" class="my-4">Words</nav-link>
+          <router-link to="/" class="my-4">Home</router-link>
+          <router-link to="/about" class="my-4">About</router-link>
+          <router-link to="/words" class="my-4">Words</router-link>
         </h1>
       </div>
     </transition>
@@ -31,16 +31,15 @@
 </template>
 
 <script>
-import NavLink from "./NavLink.vue";
 import MenuIcon from "../icons/Menu.vue";
 import CloseIcon from "../icons/Close.vue";
 export default {
-  data: function() {
+  data: function () {
     return {
-      showNav: this.showNav
+      showNav: this.showNav,
     };
   },
-  components: { NavLink, MenuIcon, CloseIcon },
+  components: { MenuIcon, CloseIcon },
   methods: {
     toggleNavigation() {
       this.showNav = !this.showNav;

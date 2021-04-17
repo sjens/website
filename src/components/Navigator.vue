@@ -1,16 +1,9 @@
 <template>
   <div class="hidden md:flex justify-end pb-10">
-    <nav-link href="/">Home</nav-link>
+    <router-link to="/">Home</router-link>
     <span class="px-2" />
-    <nav-link href="/about">About</nav-link>
+    <router-link to="/about">About</router-link>
     <span class="px-2" />
-    <nav-link href="/words">Words</nav-link>
+    <router-link to="/words">Words</router-link>
   </div>
 </template>
-
-<script>
-import NavLink from "./NavLink.vue";
-export default {
-  components: { NavLink },
-};
-</script>
