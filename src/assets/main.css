@@ -24,6 +24,9 @@
   h4 {
     @apply text-lg;
   }
+  .router-link-exact-active {
+    @apply underline;
+  }
 }
 
 @tailwind components;
