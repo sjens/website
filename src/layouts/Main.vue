@@ -1,22 +1,22 @@
 <template>
-  <transition
-    appear
-    appear-active-class="transition-opacity duration-300 ease-in"
-    appear-class="opacity-0"
-    appear-to-class="opacity-100"
-  >
-    <div>
-      <navigator />
-      <div class="flex">
-        <slot name="pageTitle"></slot>
-        <div class="flex-grow" />
-        <mobile-navigator />
-      </div>
+  <div>
+    <navigator />
+    <div class="flex">
+      <slot name="pageTitle" />
+      <div class="flex-grow" />
+      <mobile-navigator />
+    </div>
+    <transition
+      appear
+      appear-active-class="transition-opacity duration-300 ease-in"
+      appear-class="opacity-0"
+      appear-to-class="opacity-100"
+    >
       <div class="py-6">
         <slot />
       </div>
-    </div>
-  </transition>
+    </transition>
+  </div>
 </template>
 
 <script>
