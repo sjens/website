@@ -11,6 +11,11 @@ const routes = [
     component: Welcome
   },
   {
+    path: '*',
+    name: '404',
+    component: () => import('../layouts/404.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import('../pages/About.vue')
@@ -21,9 +26,8 @@ const routes = [
     component: () => import('../pages/Words.vue')
   },
   {
-    path: '*',
-    name: '404',
-    component: () => import('../pages/404.vue')
+    path: '/words/:articleId',
+    component: () => import('../layouts/Article.vue')
   }
 ]
 
