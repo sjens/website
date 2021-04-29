@@ -6,16 +6,9 @@
       <div class="flex-grow" />
       <mobile-navigator />
     </div>
-    <transition
-      appear
-      appear-active-class="transition-opacity duration-300 ease-in"
-      appear-class="opacity-0"
-      appear-to-class="opacity-100"
-    >
-      <div class="py-6">
-        <slot />
-      </div>
-    </transition>
+    <div class="py-6">
+      <slot />
+    </div>
   </div>
 </template>
 

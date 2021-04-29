@@ -12,6 +12,14 @@
       even be a kind of meta post describing building this very website, who
       knows‽
     </p>
+    <ul v-bind="loadArticles">
+      <li class="py-1 md:py-0" v-for="article in loadArticles" :key="article">
+        {{ article.date }}
+        <a class="underline" :href="article.location">{{
+          article.pageTitle
+        }}</a>
+      </li>
+    </ul>
   </main-layout>
 </template>
 
@@ -19,5 +27,23 @@
 import MainLayout from "../layouts/Main.vue";
 export default {
   components: { MainLayout },
+  computed: {
+    loadArticles() {
+      let files = require.context("@/pages/words", true, /^.*\.vue$/);
+      let articles = [];
+      let i = 0;
+      files.keys().forEach((file) => {
+        file = "./words" + file.substring(1, file.length - 4);
+        const componentData = require("" + file).default.data();
+        articles[i] = {
+          location: file,
+          pageTitle: componentData.pageTitle,
+          date: componentData.date,
+        };
+        i++;
+      });
+      return articles.reverse();
+    },
+  },
 };
 </script>

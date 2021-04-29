@@ -1,6 +1,6 @@
 <template>
   <main-layout>
-    <h1 class="text-9xl">Hello.</h1>
+    <h1 class="text-8xl md:text-9xl">Hello.</h1>
     <h2 class="flex justify-end">You've found my website!</h2>
     <h4 class="mt-8">
       Here you can find a bit of information about me, Simon Jensen. I am a
