@@ -13,7 +13,7 @@
       knows‽
     </p>
     <ul v-bind="loadArticles">
-      <li class="py-1 md:py-0" v-for="article in loadArticles" :key="article">
+      <li class="py-1 md:py-0" v-for="(article, id) in loadArticles" :key="id">
         {{ article.date }}
         <a class="underline" :href="article.location">{{
           article.pageTitle
