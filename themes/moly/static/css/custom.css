@@ -1,22 +1,22 @@
 :root {
-    --primary: hsl(265, 38%, 13%);
-    --secondary: hsl(283, 6%, 45%);
-    --tertiary: hsl(257, 15%, 91%);
-    --light: hsl(270, 100%, 99%);
-    --accent: hsl(278, 100%, 92%);
-    --accent-alt: hsl(279, 100%, 97%);
-    --accent-ui: hsl(284, 55%, 66%);
+    --primary: hsl(0, 0%, 20%);
+    --secondary: hsl(125, 6%, 45%);
+    --tertiary: hsl(125, 15%, 91%);
+    --light: hsl(0, 0%, 98%);
+    --accent: hsl(127, 11%, 48%);
+    --accent-alt: hsl(125, 9%, 80%);
+    --accent-ui: hsl(126, 18%, 36%);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary: hsl(300, 100%, 99%);
-        --secondary: hsl(280, 5%, 37%);
-        --tertiary: hsl(270, 5%, 16%);
-        --light: hsl(280, 5%, 12%);
-        --accent: hsl(282, 25%, 40%);
-        --accent-alt: hsl(278, 14%, 20%);
-        --accent-ui: hsl(284, 55%, 66%);
+        --primary: hsl(0, 0%, 95%);
+        --secondary: hsl(125, 5%, 37%);
+        --tertiary: hsl(125, 5%, 16%);
+        --light: hsl(0, 0%, 12%);
+        --accent: hsl(125, 17%, 28%);
+        --accent-alt: hsl(125, 17%, 14%);
+        --accent-ui: hsl(126, 18%, 36%);
     }
 }
 
@@ -35,4 +35,7 @@ body {
 
 nav {
     padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
