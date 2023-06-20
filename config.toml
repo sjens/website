@@ -3,8 +3,6 @@ languageCode = 'en-us'
 title = "It's a website"
 theme = 'moly'
 
-custom_css = ["css/custom.css"]
-
 [privacy]
   [privacy.disqus]
     disable = true

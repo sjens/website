@@ -1,17 +1,15 @@
 {{ define "main" }}
+    <div>
+        <h1 style="margin-bottom: 0;">{{ .Title }}</h1>
+        {{- if isset .Params "date" -}}
+        {{ if eq .Lastmod .Date }}
+        <time><i>{{ .Date | time.Format (":date_medium") }}</i></time>
+        {{ else }}
+        <time><i>{{ .Lastmod | time.Format (":date_medium") }}</i></time>
+        {{ end }}
+        {{- end -}}
+    </div>
 <article>
-    <header>
-        <div>{{ .Title }}</div>
-        <div>
-            {{- if isset .Params "date" -}}
-            {{ if eq .Lastmod .Date }}
-            <time>{{ .Date | time.Format (":date_medium") }}</time>
-            {{ else }}
-            <time>{{ .Lastmod | time.Format (":date_medium") }}</time>
-            {{ end }}
-            {{- end -}}
-        </div>
-    </header>
     {{- partial "prose.html" . -}}
 </article>
 {{ end }}
