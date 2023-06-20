@@ -1,35 +1,18 @@
-<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
-    <div class="
-        h:full
-        w:full
-        max-w:1200
-        mx:auto
-        px:32
-        d:flex
-        align-items:center
-    ">
+<nav>
     {{ if not .IsHome }}
         <div>
-            <a href="/" class="mr-3 font:extralight">Home</a>
+            <a href="/">Home</a>
         </div>
     {{ end }}
 
-        <div class="ml:auto">
+        <div>
             {{ $currentPage := . }}
             {{ $active := "" }}
             {{ range .Site.Menus.main }}
             {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
             {{ $active = "active" }}
             {{ end }}
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                {{ $active }}
-            " href="{{ .URL }}" title="{{ .Title }}">
+            <a href="{{ .URL }}" title="{{ .Title }}">
                 {{- .Name -}}
             </a>
             {{ end }}

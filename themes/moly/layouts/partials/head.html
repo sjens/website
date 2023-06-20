@@ -5,12 +5,6 @@
 
     <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
 
-    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
-    <script src="https://unpkg.com/@master/style@1.5.0"></script>
-    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
-    <script src="https://unpkg.com/master-styles-group"></script>
-    <script src="https://unpkg.com/themes.js"></script>
-    <script>window.themes = window.themes || new window.Themes()</script>
-
-    {{- partial "head-extra.html" . -}}
+    <link href="/css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
