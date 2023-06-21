@@ -21,7 +21,16 @@
   text-align: center;
   color: var(--logo-primary);
   animation: shadows 3s ease-in infinite, move 3s ease-in infinite;
-  letter-spacing: 0.2rem;
+
+  align-self: center;
+}
+
+.logo a {
+  color: var(--logo-primary);
+  text-decoration-color: inherit;
+  text-decoration-thickness: inherit;
+  text-decoration-line: none;
+  text-underline-offset: inherit;
 }
 
 @keyframes shadows {
