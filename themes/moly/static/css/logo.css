@@ -20,7 +20,8 @@
   font-size: calc(2rem);
   text-align: center;
   color: var(--logo-primary);
-  animation: shadows 3s ease-in infinite, move 3s ease-in infinite;
+  animation: shadows 1.2s cubic-bezier(.86,0,.07,1), move 1.2s cubic-bezier(.86,0,.07,1);
+  animation-fill-mode: forwards;
 
   align-self: center;
 }
